@@ -10,42 +10,29 @@
     <link rel="icon" type="image/x-icon" href="images/Ghana.jpeg">
 </head>
 <body>
-    <div class="content">
         <div class="container">
             <h2 class="jumbotron text-center">Akan Name Generator</h2>
             <p>Hello There! This is a web application that takes a user's birthday and calculates the day of the week they were born and then depending on their gender outputs their Akan Name.</p>
             <p>To be able to know your Akan Name or your child's Akan name fill the form below duly and the name will be generated.</p>
+            <h6>For you to be able to know your Akan name you can fill the form below duly:</h6>
+
             <form id="akanForm">
-                <label for="date-of-birth">Date:
-                    <input id="date" type="number" name="date-of-birth" placeholder="Date-of-Birth" value="" required>
-                </label>
-                <label for="month-of-birth">Month:
-                    <input id="month" type="number" name="month-of-birth" placeholder="Month-of-Birth" value="" required>
-                </label>
-                <label for="year-of-birth">Year:
-                    <input id="year" type="number" name="year-of-birth" placeholder="Year-of-Birth" value="" required>
-                </label>
-                <br>
-                <label for="Gender">
-                    <p class="gender">What is your Gender</p>
-                    Female
-                    <input id="female" type="radio" name="gender" value="Female" required>
-                    Male
-                    <input id="male" type="radio" name="gender" value="Male" required>
-                </label>
-                <br><br>
-                <input id="submitButton" type="submit" name="" value="Generate name">
+                <label for="gender">Gender</label>
+                <div class="selectbox">
+                    <select id="gender" required>
+                      <option value="">Select Gender</option>
+                      <option value="female">Female</option>
+                      <option value="male">Male</option>
+                    </select>
+                </div>
+  
+                <label for="Date">Date of Birth</label><br>
+                <input id="date" type="Date" required><br>
+                <input type="submit" value="Submit">
             </form>
-            <br>
-            <form>                          
-                <input class="clear" type="submit" value="Clear Input">
-            </form>
-            <br>
-            <div id="reveal-result">
-            <h5><i>Your Akan Name will be diplayed below:</i></h5>
-          </div>
         </div>
     </div>
+    <div id="get-result"></div>
     <div class="footer">
         Designed by RK Oyondi &copy; 2022
     </div>
