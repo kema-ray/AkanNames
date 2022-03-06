@@ -24,4 +24,22 @@ akanForm.addEventListener("submit", (e) => {
 
     femaleAkanNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
     maleAkanNames = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
+
+    let bornDay;
+
+    if (dayOfTheWeek == 0 && gender == "female") {
+        bornDay = "Sunday";
+        akanName = femaleAkanNames[0];
+    } else if (dayOfTheWeek == 0 && gender == "male") {
+        bornDay = "Sunday";
+        akanName = maleAkanNames[0];
+
+
+    } else if (dayOfTheWeek == 1 && gender == "female") {
+        bornDay = "Monday";
+        akanName = femaleAkanNames[1];
+    } else if (dayOfTheWeek == 1 && gender == "male") {
+        bornDay = "Monday";
+        akanName = maleAkanNames[1];
+
 }
