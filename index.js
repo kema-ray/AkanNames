@@ -1,4 +1,4 @@
-let akanForm = document.getElementById("akanForm");
+
 akanForm.addEventListener("submit", (e) => {
     e.preventDefault();
 
