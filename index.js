@@ -83,5 +83,6 @@ akanForm.addEventListener("submit", (e) => {
         bornDay = "Saturday";
         akanName = maleAkanNames[6];
     }
-
-}
+    let result = document.getElementById("get-result").innerHTML = "You were born on a " + bornDay + " so your akan name is " + akanName + "!"
+    document.getElementById("akanForm").reset();
+});
