@@ -30,16 +30,33 @@ akanForm.addEventListener("submit", (e) => {
     if (dayOfTheWeek == 0 && gender == "female") {
         bornDay = "Sunday";
         akanName = femaleAkanNames[0];
-    } else if (dayOfTheWeek == 0 && gender == "male") {
+    } 
+    else if (dayOfTheWeek == 0 && gender == "male") {
         bornDay = "Sunday";
         akanName = maleAkanNames[0];
-
-
-    } else if (dayOfTheWeek == 1 && gender == "female") {
+    } 
+    else if (dayOfTheWeek == 1 && gender == "female") {
         bornDay = "Monday";
         akanName = femaleAkanNames[1];
-    } else if (dayOfTheWeek == 1 && gender == "male") {
+    } 
+    else if (dayOfTheWeek == 1 && gender == "male") {
         bornDay = "Monday";
         akanName = maleAkanNames[1];
+    } 
+    else if (dayOfTheWeek == 2 && gender == "female") {
+        bornDay = "Tuesday";
+        akanName = femaleAkanNames[2];
+    } 
+    else if (dayOfTheWeek == 2 && gender == "male") {
+        bornDay = "Tuesday";
+        akanName = maleAkanNames[2];
+    } 
+    else if (dayOfTheWeek == 3 && gender == "female") {
+        bornDay = "Wednesday";
+        akanName = femaleAkanNames[3];
+    } 
+    else if (dayOfTheWeek == 3 && gender == "male") {
+        bornDay = "Wednesday";
+        akanName = maleAkanNames[3];
 
 }
